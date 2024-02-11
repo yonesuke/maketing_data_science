@@ -1,0 +1,93 @@
+site_name: マーケティングデータ分析
+copyright: Copyright &copy; 2024 Ryosuke Yoneda
+repo_url: https://github.com/yonesuke/maketing_data_science
+repo_name: yonesuke/maketing_data_science
+site_description: Pythonによるビジネスデータサイエンス
+site_author: Ryosuke Yoneda
+
+theme:
+  name: material
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/
+    # - navigation.footer
+    - navigation.top
+    - navigation.sections
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
+    - search.suggest
+    - search.highlight
+    # When section index pages are enabled, documents can be directly attached to sections, which is particularly useful for providing overview pages
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - toc.follow
+  palette:
+    primary: light-green
+plugins:
+  - search
+  - social
+  - tags
+  - mkdocs-jupyter:
+      include_requirejs: true
+extra:
+  social:
+    - icon: fontawesome/solid/house-chimney
+      link: https://yonesuke.github.io/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:yonedakyoto@gmail.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/yonesuke
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/yonesuke1729
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/citations?user=XN3JxqIAAAAJ
+    
+
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tabbed
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - はじめに: index.md
+  - "第3章 集計と可視化からデータを理解する": notebooks/chapter03.ipynb
+
+use_directory_urls: false
