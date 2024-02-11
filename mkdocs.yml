@@ -89,5 +89,6 @@ markdown_extensions:
 nav:
   - はじめに: index.md
   - "第3章 集計と可視化からデータを理解する": notebooks/chapter03.ipynb
+  - "第4章 顧客の分析": notebooks/chapter04.ipynb
 
 use_directory_urls: false

@@ -10,3 +10,4 @@
 | 各章 | リンク | 最終更新日 |
 | ---- | ---- | ---- |
 | 第3章 集計と可視化からデータを理解する | [chapter03](notebooks/chapter03.ipynb) | 2024-02-11 |
+| 第4章 顧客の分析 | [chapter03](notebooks/chapter04.ipynb) | 2024-02-11 |
