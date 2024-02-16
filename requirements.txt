@@ -11,3 +11,4 @@ mkdocs-material[imaging]
 mkdocs-jupyter
 mkdocs-plotly-plugin
 statsmodels
+scikit-learn
